@@ -1,0 +1,4 @@
+com/example/provider/MainActivity.java
+ com.example.provider.MainActivity
+com/example/provider/BuildConfig.java
+ com.example.provider.BuildConfig
