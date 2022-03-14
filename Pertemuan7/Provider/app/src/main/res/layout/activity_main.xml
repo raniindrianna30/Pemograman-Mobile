@@ -8,17 +8,18 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="TextView"
         android:layout_width="0dp"
         android:layout_height="60dp"
+        android:text="textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         android:id="@+id/contactName"
-       app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         android:layout_marginStart="63dp"
-        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/activity_main"
         android:layout_marginEnd="63dp"
-        app:layout_constraintRight_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/contact_ID"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintBottom_toTopOf="@id/contactID"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_creator="1"/>
 
@@ -26,7 +27,7 @@
         android:text="TextView"
         android:layout_width="0dp"
         android:layout_height="64dp"
-        android:id="@+id/contact_ID"
+        android:id="@+id/contactID"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         android:layout_marginStart="63dp"
         app:layout_constraintLeft_creator="1"
@@ -36,18 +37,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/activity_main"
         android:layout_marginBottom="56dp"
         app:layout_constraintBottom_creator="1"/>
-
-
     <ListView
         android:layout_width="wrap_content"
+        android:id="@android:id/list"
         android:layout_height="0dp"
-        android:id="@+id/list"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@id/activity_main"
         app:layout_constraintTop_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        app:layout_constraintBottom_toTopOf="@+id/contactName"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintBottom_toTopOf="@id/contactName"
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_creator="1"/>
-
+        app:layout_constraintBottom_creator="1"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

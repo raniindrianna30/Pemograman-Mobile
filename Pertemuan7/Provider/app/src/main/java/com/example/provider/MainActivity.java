@@ -16,43 +16,31 @@ import android.provider.ContactsContract;
 import android.widget.CursorAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
     final private int REQUEST_READ_CONTACTS = 123;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if(ContextCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS)
-            != PackageManager.PERMISSION_GRANTED) {
-
-            ActivityCompat.requestPermissions(this,
-                    new String[] {Manifest.permission.READ_CONTACTS},
-                    REQUEST_READ_CONTACTS);
-        }else{
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS)!= PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_CONTACTS},REQUEST_READ_CONTACTS);
+        } else {
             ListContacts();
         }
     }
-
     @Override
-    public void onRequestPermissionsResult(int requestCode
-            , String[] permissions, int[] grantResult) {
+    public void onRequestPermissionsResult (int requestCode,String[] permissions, int[] grantResults) {
         switch (requestCode) {
             case REQUEST_READ_CONTACTS:
-                if(grantResult[0] == PackageManager.PERMISSION_GRANTED) {
+                if (grantResults[0]== PackageManager.PERMISSION_GRANTED) {
                     ListContacts();
                 } else {
-                    Toast.makeText(MainActivity.this
-                    , "PermissionDenied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Permission Denied", Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
-                super.onRequestPermissionsResult(requestCode
-                , permissions, grantResult);
+                super.onRequestPermissionsResult(requestCode,permissions,grantResults);
         }
     }
     protected void ListContacts() {
@@ -66,18 +54,14 @@ public class MainActivity extends ListActivity {
                 null,
                 null);
         c = cursorLoader.loadInBackground();
-
-        String[] columns = new String[] {
+        String[] columns = new String[]{
                 ContactsContract.Contacts.DISPLAY_NAME,
-                ContactsContract.Contacts._ID};
-
-        int[] views = new int[] {R.id.contactName, R.id.contact_ID};
+                ContactsContract.Contacts._ID
+        };
+        int[] views = new int[] {R.id.contactName, R.id.contactID};
         SimpleCursorAdapter adapter;
-
         adapter = new SimpleCursorAdapter(
-                this, R.layout.activity_main, c, columns, views,
-                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER) ;
-
+                this,R.layout.activity_main,c,columns,views, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
         this.setListAdapter(adapter);
     }
 }
