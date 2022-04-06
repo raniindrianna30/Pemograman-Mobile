@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">MyTaskList</string>
+
+    <string name="nama_tugas">MATA KULIAH</string>
+    <string name="tanggal_pengerjaan">Tanggal Pengerjaan</string>
+    <string name="deadline">DEADLINE</string>
+    <string name="desc">DESKRIPSI</string>
+    <string name="tambah">TAMBAH</string>
+    <string name="home">Home</string>
+    <string name="tambah_tugas">ADD TASK</string>
+    <string name="riwayat">Riwayat Tugas</string>
+    <string name="empty_not_saved">Kosong</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="list_task">
+        <item>Task 1</item>
+        <item>Task 2</item>
+        <item>Task 3</item>
+        <item>Task 4</item>
+        <item>Task 5</item>
+        <item>Task 6</item>
+        <item>Task 7</item>
+        <item>Task 8</item>
+    </string-array>
+    <string-array name="des">
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+        <item>Note Tugas</item>
+    </string-array>
+    <string-array name="deadline_task">
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+        <item>24/04/22</item>
+    </string-array>
+    <string-array name="list_task_done">
+        <item>Task 9</item>
+        <item>Task 10</item>
+        <item>Task 11</item>
+        <item>Task 12</item>
+        <item>Task 13</item>
+        <item>Task 14</item>
+        <item>Task 15</item>
+    </string-array>
+    <string-array name="deskripsi_done">
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+        <item>Tugas Selesai</item>
+    </string-array>
+    <string-array name="deadline_done">
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+        <item>29/04/22</item>
+    </string-array>
+
+</resources>
