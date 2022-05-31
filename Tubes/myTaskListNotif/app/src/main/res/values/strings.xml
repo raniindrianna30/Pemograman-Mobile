@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">myTaskListNotif</string>
+    <string name="deadline">DEADLINE</string>
+    <string name="time">TIME</string>
+    <string name="desc">DESCRIPTION</string>
+    <string name="tambah">TASK Saved</string>
+    <string name="home">Home</string>
+    <string name="tambah_tugas">ADD TASK</string>
+    <string name="riwayat">Riwayat Tugas</string>
+    <string name="empty_not_saved">Task not Saved</string>
+    <string name="insert">"INSERT HERE...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
