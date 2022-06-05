@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantRaSa">
         <activity
-            android:name=".DetailActivity"
+            android:name=".slide_image_activity"
+            android:exported="false" />
+        <activity
+            android:name=".detailActivity"
             android:exported="false" />
         <activity android:name=".RegisterActivity" />
         <activity
@@ -27,6 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
