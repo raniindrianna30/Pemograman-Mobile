@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Register.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/setter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            android:textColor="@color/Primary"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/setter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tvUserName"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:id="@+id/tvUserName"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_username"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="26dp"
+                android:background="#0000"
+                android:drawableTint="@color/inputText"
+                android:drawableStart="@drawable/ic_outline_email"
+                android:drawablePadding="12dp"
+                android:textColor="@color/inputText"
+                android:hint="username"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view_username"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="0.5dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:id="@+id/tvEmail"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_username"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="26dp"
+                android:background="#0000"
+                android:drawableTint="@color/inputText"
+                android:drawableStart="@drawable/ic_outline_email"
+                android:drawablePadding="12dp"
+                android:textColor="@color/inputText"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textSize="14sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view_email"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+            android:layout_height="0.5dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:id="@+id/tv_Password"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_email"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            app:passwordToggleContentDescription="password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="26dp"
+                android:background="#0000"
+                android:drawableTint="@color/inputText"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="12dp"
+                android:textColor="@color/inputText"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="14sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view_password"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Password"
+            android:layout_height="0.5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:id="@+id/tvPass"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_password"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            app:passwordToggleContentDescription="password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addCPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="26dp"
+                android:background="#0000"
+                android:drawableTint="@color/inputText"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="12dp"
+                android:textColor="@color/inputText"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/viewpass"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tvPass"
+            android:layout_height="0.5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:id="@+id/tvPhone"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpass"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="26dp"
+                android:background="#0000"
+                android:drawableTint="@color/inputText"
+                android:drawableStart="@drawable/ic_baseline_phone"
+                android:drawablePadding="12dp"
+                android:textColor="@color/inputText"
+                android:hint="No Handphone"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/viewPhone"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="50dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:padding="4dp"
+            android:text="Forget password"
+            android:textColor="@color/colorText"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPhone" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btn_round_primary_bg"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forget_password" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
