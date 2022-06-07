@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tugas Reqres.In"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/listUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="300sp"
+                android:text="List Users"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <Button
+                android:id="@+id/singleUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Single Users"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listUsers" />
+
+            <Button
+                android:id="@+id/singleUsersNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Single Users Not Found "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleUsers" />
+
+            <Button
+                android:id="@+id/listResource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="List Resource"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleUsersNotFound" />
+
+            <Button
+                android:id="@+id/singleResource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Single Resource"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listResource" />
+
+            <Button
+                android:id="@+id/singleResourceNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Single Resource Not Found"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleResource" />
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Create"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleResourceNotFound" />
+
+            <Button
+                android:id="@+id/updatePut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Update ( PUT )"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create" />
+
+            <Button
+                android:id="@+id/updatePatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Update ( PATCH )"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePut" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+
+            <Button
+                android:id="@+id/registerSuccessful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Register - Successful"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+
+            <Button
+                android:id="@+id/registerUnsuccessful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Register - Unsuccessful"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+
+            <Button
+                android:id="@+id/loginsuccessful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Login - Successful"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+
+            <Button
+                android:id="@+id/loginUnsuccessful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:text="Login - Unsuccessful"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+
+            <Button
+                android:id="@+id/delayedResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="300sp"
+                android:layout_marginBottom="20dp"
+                android:text="Delayed Response"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/updatePatch" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

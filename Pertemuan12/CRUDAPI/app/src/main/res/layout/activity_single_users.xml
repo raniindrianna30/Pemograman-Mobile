@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="25dp">
+
+  <ImageView
+      android:id="@+id/single_img"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:src="@mipmap/ic_launcher" />
+
+  <TextView
+      android:id="@+id/single_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_toRightOf="@+id/single_img"
+      android:layout_weight="1"
+      android:paddingLeft="10dp"
+      android:text="Nama"
+      android:textSize="20dp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/single_last_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/single_name"
+      android:layout_gravity="center"
+      android:layout_marginTop="30dp"
+      android:layout_toRightOf="@+id/single_img"
+      android:layout_weight="1"
+      android:paddingLeft="10dp"
+      android:text="Last Nama"
+      android:textSize="18dp" />
+
+
+</RelativeLayout>
